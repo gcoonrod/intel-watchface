@@ -5,6 +5,11 @@ TextLayer *text_date_layer;
 TextLayer *text_time_layer;
 Layer *line_layer;
 
+char *itobase10(char *buf, int value) {
+    sprintf(buf, "%d", value);
+    return buf;
+}
+
 void line_layer_update_callback(Layer *layer, GContext* ctx) {
   graphics_context_set_fill_color(ctx, GColorWhite);
   graphics_fill_rect(ctx, layer_get_bounds(layer), 0, GCornerNone);
@@ -29,11 +34,7 @@ void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed) {
 	
   itoa(week, week_num);
 
-  strcpy(date_text, year_num);
-  strcat(date_text, "WW");
-  strcat(date_text, week_num);
-  strcat(date_text, ".");
-  strcat(date_text, day_num);
+  snprintf(date_text, sizeof(date_text), )
 	
 	
   // TODO: Only update the date when it's changed.
