@@ -1,0 +1,35 @@
+{
+    "versionLabel": "0.1",
+    "uuid": "7b4205eb-43d9-4ecd-a8c0-8ef22bd54e1f",
+    "appKeys": {},
+    "longName": "Intel",
+    "versionCode": 0,
+    "capabilities": [
+        ""
+    ],
+    "shortName": "Intel",
+    "companyName": "gcoonrod",
+    "watchapp": {
+        "watchface": true
+    },
+    "resources": {
+        "media": [
+            {
+                "type": "font",
+                "name": "FONT_ROBOTO_CONDENSED_21",
+                "file": "fonts/Roboto-Condensed.ttf"
+            },
+            {
+                "characterRegex": "[:0-9]",
+                "type": "font",
+                "name": "FONT_ROBOTO_BOLD_SUBSET_49",
+                "file": "fonts/Roboto-Bold.ttf"
+            },
+            {
+                "type": "png",
+                "name": "IMAGE_MENU_ICON",
+                "file": "images/menu_icon_simplicity.png"
+            }
+        ]
+    }
+}
